@@ -12,18 +12,20 @@ css_selector {
 
 :root {
   --bg-color: #5b7051;
-  --bg-form-board: #87a878;
+  --bg-form-board: #a4c992;
   --bg-secondary: #929d7c;
-  --border-color: #c7ccb9;
+  --border-color: #7cb376;
   --bg-card: #cae2bc;
-  --accent-color: #dbf9b8;
+  --accent-color: #6ecd7e;
+  --text-color: #ffff;
 }
 
 .page-bg {
-  background-color: var(--bg-color);
+  background-image: url("leaves.png");
 }
 
 .nav {
+  background-image: url(nav\ and\ footer\ bg.png);
   background-color: var(--bg-secondary);
   display: flex;
   border-bottom: 3px solid var(--border-color);
@@ -32,39 +34,61 @@ css_selector {
   margin-bottom: 1rem;
 }
 
-.nav-elements {
-  margin-left: 1rem;
-  margin-right: 1rem;
+.btn {
+  background-color: var(--accent-color);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  border-radius: 3px;
+  padding: 3px;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
 }
 .main {
   display: flex;
   flex: 1;
 }
 .forms-side {
+  padding: 0.5rem;
   display: flex;
   background-color: var(--bg-form-board);
   flex-direction: column;
   vertical-align: top;
   margin: 0.5rem;
   background-color: var(--bg-form-board);
-  width: 100%;
+  width: 50%;
   height: 28rem;
   align-items: center;
+  border: 4px solid var(--border-color);
+  border-radius: 4%;
+}
+
+.form-element {
+  margin-top: 1rem;
+  color: var(--text-color);
+}
+
+.health-form {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
 }
 
 .dashboard-side {
+  padding: 0.5rem;
   display: flex;
-  size: 1fr;
+
   flex-direction: column;
   margin: 0.5rem;
   background-color: var(--bg-form-board);
-  width: 100%;
+  width: 50%;
   height: 28rem;
-
+  border: 4px solid var(--border-color);
   align-items: center;
+  border-radius: 4%;
 }
 
 .footer {
+  background-image: url(nav\ and\ footer\ bg.png);
   background-color: var(--bg-secondary);
   height: max-content;
   position: absolute;
@@ -72,6 +96,14 @@ css_selector {
   height: 2rem;
   width: 100%;
   padding: 0.5rem;
-  align-items: center;
   border-top: 3px solid var(--border-color);
+  justify-content: center;
+  align-items: center;
+}
+
+.site-text {
+  font-family: Georgia, "Times New Roman", Times, serif, serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--text-color);
 }

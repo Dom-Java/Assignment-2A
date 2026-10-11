@@ -7,77 +7,77 @@
     <link rel="stylesheet" href="Assignment_2A.css" />
   </head>
   <nav class="nav">
-          <a href="#">
-            <span><img src="" alt="" /></span>
-          </a>
-          <a href="#" class="nav-elements">About us</a>
-          <a href="#" class="nav-elements">login</a>
-        </nav>
-  <body class="page-bg" >
+    <a href="#">
+      <span><img src="" alt="" /></span>
+    </a>
+    <a href="#" class="btn">About us</a>
+    <a href="#" class="btn">login</a>
+  </nav>
+  <body class="page-bg">
     <main class="main">
-    <aside class="forms-side">
+      <aside class="forms-side">
         <header>
-          <h2>Telemetry Data:</h2>
+          <h2 class="site-text">Telemetry Data:</h2>
         </header>
         <div>
-          <form id="tele_form" action="Assignment_2A.html"  method="post" onsubmit="return false">
-            <div>
-            
-            <label for="tele_form" id="bay_num">Bay Number</label>
-            <input type="text">
+          <form
+            class="health-form"
+            id="tele_form"
+            action="Assignment_2A.html"
+            method="post"
+            onsubmit="return false;"
+          >
+            <label class="form-element" for="tele_form" id="bay_num"
+              >Bay Number</label
+            >
+            <input type="text" />
 
-            <label for="tele_form" pH_num>pH level</label>
+            <label class="form-element" for="tele_form" pH_num>pH level</label>
             <input type="number" />
-            </div>
 
-            <div>
-            <label for="tele_form" id="temp_num">Temperature</label>
+            <label class="form-element" for="tele_form" id="temp_num"
+              >Temperature</label
+            >
             <input type="number" />
-            </div>
 
-            <div></div>
-            <label for="tele_form" id="ec_num">Electrical conductivity</label>
+            <label class="form-element" for="tele_form" id="ec_num"
+              >Electrical conductivity</label
+            >
             <input type="number" />
-            </div>
 
-            <div>
-            <label for="tele_form" id="hum_num">Relative Humidity</label>
+            <label class="form-element" for="tele_form" id="hum_num"
+              >Relative Humidity</label
+            >
             <input type="number" />
-            </div>
 
-            <div>
-              <button for="tele_form"  type="button" id="submit_btn"> Submit Form</button>
+            <div class="form-element">
+              <button class="btn" for="tele_form" type="button" id="submit_btn">
+                Submit Form
+              </button>
             </div>
           </form>
         </div>
-      <!-- This will be used for the user to fill out their info -->
-    </aside>
-    
+        <!-- This will be used for the user to fill out their info -->
+      </aside>
+
       <section class="dashboard-side">
         <header>
-          <h2>
-          Agricultural Health Dashboard:
-          </h2>
-          <div> 
-            
-              <output name="y" id="y"  form="tele_form" for="bay_num"> </output> 
-              <output for="pH_num"> </output> 
-              <output for="ec_num"> </output> 
-              <output for="temp_num"> </output> 
-              <output for="submit_btn"> </output> 
-            
+          <h2 class="site-text">Agricultural Health Dashboard:</h2>
+          <div>
+            <output name="y" id="y" form="tele_form" for="bay_num"> </output>
+            <output for="pH_num"> </output>
+            <output for="ec_num"> </output>
+            <output for="temp_num"> </output>
+            <output for="submit_btn"> </output>
           </div>
         </header>
         <!-- This will display the users dashboard -->
       </section>
-  
-
-
     </main>
   </body>
   <script>
-      //will be used for the js imported into the project
-    </script>
+    //will be used for the js imported into the project
+  </script>
   <footer class="footer">
     <p>&copy; Agriculture Watch</p>
   </footer>
