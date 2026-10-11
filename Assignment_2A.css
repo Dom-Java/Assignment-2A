@@ -18,6 +18,8 @@ css_selector {
   --bg-card: #cae2bc;
   --accent-color: #6ecd7e;
   --text-color: #ffff;
+  --input-bg: #86c190;
+  transition: 7s;
 }
 
 .page-bg {
@@ -29,9 +31,17 @@ css_selector {
   background-color: var(--bg-secondary);
   display: flex;
   border-bottom: 3px solid var(--border-color);
-  padding: 1rem;
-  justify-content: right;
-  margin-bottom: 1rem;
+  padding: 0.5rem;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.site-heading {
+  margin-right: 24rem;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn {
@@ -39,13 +49,31 @@ css_selector {
   border: 1px solid var(--border-color);
   color: var(--text-color);
   border-radius: 3px;
-  padding: 3px;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
+  padding: 2px;
+  white-space: nowrap;
+  text-decoration: none;
+  justify-self: center;
+}
+
+.btn:hover {
+  background-image: linear-gradient(to bottom right, #1d461df1, #031e098b);
 }
 .main {
   display: flex;
-  flex: 1;
+}
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5rem;
+}
+.logo {
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+  width: 7%;
+  height: 100%;
+}
+.logo-container {
+  align-items: start;
 }
 .forms-side {
   padding: 0.5rem;
@@ -65,6 +93,15 @@ css_selector {
 .form-element {
   margin-top: 1rem;
   color: var(--text-color);
+}
+
+.form-input-bg {
+  background-color: var(--input-bg);
+  color: var(--text-color);
+  border: 2px solid var(--border-color);
+}
+.form-input-bg:hover {
+  background-image: linear-gradient(to bottom right, #1d461df1, #031e098b);
 }
 
 .health-form {
