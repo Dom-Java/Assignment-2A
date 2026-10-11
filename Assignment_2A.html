@@ -4,20 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>placeholder title for commit 1</title>
+    <link rel="stylesheet" href="<!-- style sheet will be located here-->" />
   </head>
   <body>
     <aside>
       <header></header>
       <!-- This will be used for the user to fill out their info -->
     </aside>
-
-    <section>
+    <main>
+      <section>
+        <header></header>
+        <!-- This will display the users dashboard -->
+      </section>
       <header></header>
-      <!-- This will display the users dashboard -->
-    </section>
-    <header></header>
-    <!-- Secondary section for more info or features  -->
-    <section></section>
+      <!-- Secondary section for more info or features  -->
+      <section></section>
+    </main>
+
+    <script>
+      //will be used for the js imported into the project
+    </script>
   </body>
   <footer></footer>
 </html>
+
+<!-- notes for use cases: -->
+<!-- Story 1 (Controlled Sensor Entry): As a greenhouse technician, I want to record telemetry readings for a specific bay with real-time numeric bounds enforcement so that invalid sensor inputs (e.g., pH outside 0 to 14 or negative values) are rejected immediately.
+● Story 2 (Status Feedback): As an agronomist, I want the portal to calculate and display an environmental status tag ("Optimal", "Warning", "Critical Hazard") immediately upon input submission.
+● Story 3 (Offline Session Persistence): As a field worker moving between greenhouses, I want logged sensor entries saved to localStorage so that refreshing the browser retains active log history.
+● Story 4 (Log Removal & Queue Purging): As an operations supervisor, I want to delete resolved logs individually or purge the entire log history.
+● Story 5 (Dynamic Out-of-Bound Indicators): As a technician typing values into the form, I want input fields to show instant visual error feedback whenever entered numbers exceed acceptable plant growth ranges.
+Notes for -->
