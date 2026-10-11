@@ -1,0 +1,55 @@
+css_selector {
+  css-property: css-value;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --bg-color: #5b7051;
+  --bg-form-board: #87a878;
+  --bg-secondary: #929d7c;
+  --border-color: #c7ccb9;
+  --bg-card: #cae2bc;
+  --accent-color: #dbf9b8;
+}
+
+.page-bg {
+  background-color: var(--bg-color);
+}
+
+.nav {
+  background-color: var(--bg-secondary);
+  display: flex;
+  border-bottom: 2px solid var(--border-color);
+  padding: 1rem;
+}
+
+.main {
+  display: flex;
+
+  align-items: center;
+  flex: 2;
+}
+
+.forms-side {
+  display: flex;
+  background-color: var(--bg-form-board);
+  flex-direction: column;
+
+  margin: 0.5rem;
+  background-color: var(--bg-form-board);
+}
+
+.dashboard-side {
+  display: flex;
+
+  flex-direction: column;
+  margin: 0.5rem;
+  background-color: var(--bg-form-board);
+}
