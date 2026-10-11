@@ -26,30 +26,52 @@ css_selector {
 .nav {
   background-color: var(--bg-secondary);
   display: flex;
-  border-bottom: 2px solid var(--border-color);
+  border-bottom: 3px solid var(--border-color);
   padding: 1rem;
+  justify-content: right;
+  margin-bottom: 1rem;
 }
 
+.nav-elements {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
 .main {
   display: flex;
-
-  align-items: center;
-  flex: 2;
+  flex: 1;
 }
-
 .forms-side {
   display: flex;
   background-color: var(--bg-form-board);
   flex-direction: column;
-
+  vertical-align: top;
   margin: 0.5rem;
   background-color: var(--bg-form-board);
+  width: 100%;
+  height: 28rem;
+  align-items: center;
 }
 
 .dashboard-side {
   display: flex;
-
+  size: 1fr;
   flex-direction: column;
   margin: 0.5rem;
   background-color: var(--bg-form-board);
+  width: 100%;
+  height: 28rem;
+
+  align-items: center;
+}
+
+.footer {
+  background-color: var(--bg-secondary);
+  height: max-content;
+  position: absolute;
+  bottom: 0px;
+  height: 2rem;
+  width: 100%;
+  padding: 0.5rem;
+  align-items: center;
+  border-top: 3px solid var(--border-color);
 }
