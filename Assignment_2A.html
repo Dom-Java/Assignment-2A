@@ -30,33 +30,33 @@
             id="tele_form"
             action="Assignment_2A.html"
             method="post"
-            onsubmit="return false;"
           >
-            <label class="form-element" for="tele_form" id="bay_num"
+            <label class="form-element" for="tele_form" 
               >Bay Number</label
             >
-            <input type="text" class="form-input-bg"/>
+            <input type="number" class="form-input-bg" id="bay_num" name="bay_num"/>
 
-            <label class="form-element" for="tele_form" pH_num>pH level</label>
-            <input type="number" class="form-input-bg"/>
+            <label class="form-element" for="tele_form">pH level</label>
+            <input type="number" class="form-input-bg" id="pH_num" name="pH_num"/>
 
-            <label class="form-element" for="tele_form" id="temp_num"
+            <label class="form-element" for="tele_form"
               >Temperature</label
             >
-            <input type="number" class="form-input-bg"/>
+            <input type="number" class="form-input-bg" id="temp_num" name="temp_num"/>
 
-            <label class="form-element" for="tele_form" id="ec_num"
+            <label class="form-element" for="tele_form" 
               >Electrical conductivity</label
             >
-            <input type="number" class="form-input-bg"/>
+            <input type="number" class="form-input-bg" id="ec_num" name="ec_num"/>
 
-            <label class="form-element" for="tele_form" id="hum_num"
+            <label class="form-element" for="tele_form" 
               >Relative Humidity</label
             >
-            <input type="number" class="form-input-bg"/>
+            <input type="number" class="form-input-bg" id="hum_num" name="hum_num"/>
 
+            <output name="outcome" for="bay_num pH_num temp_num ec_num hum_num"> 0 </output>
             <div class="form-element">
-              <button class="btn" for="tele_form" type="button" id="submit_btn">
+              <button class="btn" for="tele_form" type="submit" id="submit_btn">
                 Submit Form
               </button>
             </div>
@@ -69,20 +69,23 @@
         <header>
           <h2 class="site-text">Agricultural Health Dashboard:</h2>
           <div>
-            <output name="y" id="y" form="tele_form" for="bay_num"> </output>
-            <output for="pH_num"> </output>
-            <output for="ec_num"> </output>
-            <output for="temp_num"> </output>
-            <output for="submit_btn"> </output>
+            <p id="bay-num-out"></p>
+            <p id="pH-num-out"></p>
+            <p id="temp-num-out"></p>
+            <p id="ec-num-out"></p>
+            <p id="humidity-num-out"></p>
+            <!-- <output name="y" id="y" form="tele_form" for="bay_num"> 0 </output>
+            <output for="pH_num" form="tele_form" > 0 </output>
+            <output for="ec_num" form="tele_form" > 0</output>
+            <output for="temp_num" form="tele_form" > 0</output>
+            <output for="submit_btn" form="tele_form" > 0 </output> -->
           </div>
         </header>
         <!-- This will display the users dashboard -->
       </section>
     </main>
   </body>
-  <script>
-    //will be used for the js imported into the project
-  </script>
+  <script src="Assignment_2A.js"></script>
   <footer class="footer">
     <p class="site-text">&copy; Agriculture Watch</p>
   </footer>
