@@ -13,3 +13,4 @@ My Submission for Assignment 2A includes the follow:
 
 -the final commit will contain a zip file copy with all of my files
 <img width="1917" height="883" alt="image" src="https://github.com/user-attachments/assets/907f9b1c-edbd-48f9-8648-7f4b0de5a8f6" />
+caption: picture of a purged queue in my project
