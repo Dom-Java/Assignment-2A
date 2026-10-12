@@ -30,6 +30,7 @@
             id="tele_form"
             action="Assignment_2A.html"
             method="post"
+            onsubmit="return false"
           >
             <label class="form-element" for="tele_form" 
               >Bay Number #</label
@@ -56,7 +57,7 @@
 
             
             <div class="form-element">
-              <button class="btn" for="tele_form" type="submit" id="submit_btn">
+              <button class="btn" for="tele_form" type="submit" id="submit_btn" onclick="newCard()">
                 Submit Form
               </button>
             </div>
@@ -68,7 +69,7 @@
       <section class="dashboard-side">
         <header>
           <h2 class="site-text">Agricultural Health Dashboard: </h2>
-          <div> <button id="purge" class="btn dashboard-header">Purge queue</button></div>
+          <div> <button id="purge" class="btn dashboard-header" onclick="clearCard()">Purge queue</button></div>
         </header>
           <div id="card"  class="card">
             <p>Bay Number:</p>

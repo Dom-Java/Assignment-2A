@@ -9,11 +9,15 @@ const submit = formInput.elements["submit_btn"]; // submit button for tele_form
 function newCard() {
   //each of the following document.getElementByID should update the dashboard area, currently this is not functional
 
-  document.getElementById("bay-num-out").innerText = bayNumber;
-  document.getElementById("pH-num-out").innerText = pHLevel;
-  document.getElementById("temp-num-out").innerText = temperature;
-  document.getElementById("ec-num-out").innerText = ec;
-  document.getElementById("humidity-num-out").innerText = humidity;
+  document.getElementById("bay-num-out").innerText = toString(bayNumber.value);
+  document.getElementById("pH-num-out").innerText = toString(pHLevel.value);
+  document.getElementById("temp-num-out").innerText = toString(
+    temperature.value,
+  );
+  document.getElementById("ec-num-out").innerText = toString(ec.value);
+  document.getElementById("humidity-num-out").innerText = toString(
+    humidity.value,
+  );
 
   if (
     (pHLevel < 5.0 || pHLevel > 7.5) &&
@@ -35,11 +39,22 @@ function newCard() {
 }
 
 formInput.addEventListener("input", newCard); //looks for input for formInput, then executes newCard
-try {
-  //tries the code below while looking for errors to log
-  newCard();
-} catch (e) {
-  console.log(e);
+// try {
+//   //tries the code below while looking for errors to log
+//   newCard();
+// } catch (e) {
+//   console.log(e);
+// }
+
+function clearCard() {
+  //each of the following document.getElementByID should update the dashboard area, currently this is not functional
+
+  document.getElementById("bay-num-out").innerText = "None";
+  document.getElementById("pH-num-out").innerText = "None";
+  document.getElementById("temp-num-out").innerText = "None";
+  document.getElementById("ec-num-out").innerText = "None";
+  document.getElementById("humidity-num-out").innerText = "None";
+  document.getElementById("criticality").innerText = "None";
 }
 
 // Critical
