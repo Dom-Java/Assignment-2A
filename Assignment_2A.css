@@ -111,7 +111,9 @@ css_selector {
   flex-direction: column;
   margin: 1rem;
 }
-
+.dashboard-header {
+  margin-bottom: 1rem;
+}
 .dashboard-side {
   padding: 0.5rem;
   display: flex;
@@ -126,6 +128,14 @@ css_selector {
   border-radius: 4%;
 }
 
+.card {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border: 2px solid var(--border-color);
+  padding: 6px;
+  border-radius: 4px;
+}
+
 .footer {
   background-image: url(nav\ and\ footer\ bg.png);
   background-color: var(--bg-secondary);
@@ -138,6 +148,10 @@ css_selector {
   border-top: 3px solid var(--border-color);
   justify-content: center;
   align-items: center;
+}
+
+.footer-text {
+  margin-left: 32rem;
 }
 
 .site-text {
